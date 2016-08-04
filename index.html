@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div align="center">
+        <img src="../public/textures/allstarwars.png">
+        <h2>Top Jedi Masters</h2>
+        <div class="container">
+            <p></p>
+        </div>
+        <div class="inputs" align="center">
+            <input type="text" placeholder="Your Name" class="name">
+            <input type="text" placeholder="Score" class="score">
+            <button value="Submit" class="submit" onclick="showScore()">SUBMIT</button>
+        </div>
+    </div>
+
+
+    <script>
+        function showScore() {
+            var result = $('.name').val() + "   " + $('.score').val() + "<br>";
+            $('p').append(result);
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</body>
+
+</html>
